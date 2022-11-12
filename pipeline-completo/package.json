@@ -2,7 +2,7 @@
   "name": "pipeline-completo",
   "version": "0.1.0",
   "bin": {
-    "pipeline-completo": "bin/pipeline-completo.js"
+    "pipeline-completo": "bin/app.ts"
   },
   "scripts": {
     "build": "tsc",
