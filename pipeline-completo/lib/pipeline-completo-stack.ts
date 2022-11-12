@@ -13,7 +13,7 @@ export class PipelineCompletoStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: PipelineCompletoStackProps) {
     super(scope, id, props);
 
-    const pipeline = new CodePipeline(this,'TestPipeline',{
+    const pipeline = new CodePipeline(this,`${props?.options.pipelineName}`,{
       pipelineName: `${props?.options.pipelineName}`,
       synth: new ShellStep('Synth',{
         input: CodePipelineSource.gitHub(`${props?.options.rootAccount}/${props?.options.reposName}`,'main'),
