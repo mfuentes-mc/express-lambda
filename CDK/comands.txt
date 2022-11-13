@@ -1,0 +1,8 @@
+ npm i -D aws-cdk aws-cdk-lib constructs ts-node typescript
+
+
+ cdk deploy
+ cd synth
+ cdk deploy --all
+ cdk deploy --all --parameter duration=5
+cdk destroy
